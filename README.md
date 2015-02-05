@@ -24,7 +24,7 @@ python server.py
 ruby server.rb
 ```
 
-### Cojure with Boot
+### Clojure with Boot
 ```sh
 boot server.boot
 ```
