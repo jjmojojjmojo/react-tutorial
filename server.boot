@@ -2,14 +2,14 @@
  
 (set-env! 
   :dependencies 
-    '[[org.clojure/data.json "0.2.5"]
-      [ring/ring-core "1.3.2"]
-      [ring/ring-jetty-adapter "1.3.2"]])
+  #(into % '[[org.clojure/data.json "0.2.5"]
+             [ring/ring-core "1.3.2"]
+             [ring/ring-jetty-adapter "1.3.2"]]))
 
-(require '[ring.adapter.jetty :as jetty])
-(require '[clojure.data.json :as json])
-(require '[ring.middleware.params :refer [wrap-params]])
-(require '[ring.util.response :refer [file-response response]])
+(require '[ring.adapter.jetty     :as jetty]
+         '[clojure.data.json      :as json]
+         '[ring.middleware.params :refer [wrap-params]]
+         '[ring.util.response     :refer [file-response response]])
 
 (defn static
   [request]
