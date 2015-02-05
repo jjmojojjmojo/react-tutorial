@@ -24,10 +24,9 @@ python server.py
 ruby server.rb
 ```
 
-### Clojure with Boot
+### Clojure with [Boot](http://boot-clj.com)
 ```sh
 boot server.boot
 ```
-NOTE: to install boot, see <http://boot-clj.com/>.
 
 And visit <http://localhost:3000/>. Try opening multiple tabs!
