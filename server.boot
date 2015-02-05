@@ -9,8 +9,7 @@
 (require '[ring.adapter.jetty :as jetty])
 (require '[clojure.data.json :as json])
 (require '[ring.middleware.params :refer [wrap-params]])
-(use '[ring.util.response])
-(use 'clojure.java.io)
+(require '[ring.util.response :refer [file-response response]])
 
 (defn static
   [request]
