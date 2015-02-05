@@ -24,4 +24,10 @@ python server.py
 ruby server.rb
 ```
 
+### Cojure with Boot
+```sh
+boot server.boot
+```
+NOTE: to install boot, see <http://boot-clj.com/>.
+
 And visit <http://localhost:3000/>. Try opening multiple tabs!
